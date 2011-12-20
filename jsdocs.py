@@ -206,7 +206,7 @@ class JsdocsParser:
 
         retType = self.getFunctionReturnType(name)
         if retType is not None:
-            out.append("@return %s${1:%s}%s" % (
+            out.append("@returns %s${1:%s}%s" % (
                 "{" if self.settings['curlyTypes'] else "",
                 retType or "[type]",
                 "}" if self.settings['curlyTypes'] else ""
